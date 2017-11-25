@@ -1,0 +1,53 @@
+# Logfile created on 2017-11-25 16:40:11 +0100 by logger.rb/v1.2.7
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-11-25 16:40:11 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [deb1aa36] Running /usr/bin/env mkdir -p /tmp as nadir@localhost
+ DEBUG [deb1aa36] Command: /usr/bin/env mkdir -p /tmp
+  INFO [deb1aa36] Finished in 0.197 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-demo-production-nadir.sh 0.0%
+  INFO Uploading /tmp/git-ssh-demo-production-nadir.sh 100.0%
+  INFO [753d9739] Running /usr/bin/env chmod 700 /tmp/git-ssh-demo-production-nadir.sh as nadir@localhost
+ DEBUG [753d9739] Command: /usr/bin/env chmod 700 /tmp/git-ssh-demo-production-nadir.sh
+  INFO [753d9739] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [7cb2d40a] Running /usr/bin/env git ls-remote git@github.com:nfouka/sf4.git HEAD as nadir@localhost
+ DEBUG [7cb2d40a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-demo-production-nadir.sh" ; /usr/bin/env git ls-remote git@github.com:nfouka/sf4.git HEAD )
+ DEBUG [7cb2d40a] 	725c422b56b72d2b79cc7fa5d76083f7ec6d4432	HEAD
+  INFO [7cb2d40a] Finished in 2.442 seconds with exit status 0 (successful).
+  INFO [d8ca4c15] Running /usr/bin/env mkdir -p /var/www/demo/shared /var/www/demo/releases as nadir@localhost
+ DEBUG [d8ca4c15] Command: /usr/bin/env mkdir -p /var/www/demo/shared /var/www/demo/releases
+  INFO [d8ca4c15] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [585e2fc6] Running /usr/bin/env mkdir -p /var/www/demo/shared/app/logs /var/www/demo/shared/web/uploads as nadir@localhost
+ DEBUG [585e2fc6] Command: /usr/bin/env mkdir -p /var/www/demo/shared/app/logs /var/www/demo/shared/web/uploads
+  INFO [585e2fc6] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [90b358af] Running /usr/bin/env mkdir -p /var/www/demo/shared/app/config as nadir@localhost
+ DEBUG [90b358af] Command: /usr/bin/env mkdir -p /var/www/demo/shared/app/config
+  INFO [90b358af] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [0565a8d4] Running [ -f /var/www/demo/shared/app/config/parameters.yml ] as nadir@localhost
+ DEBUG [0565a8d4] Command: [ -f /var/www/demo/shared/app/config/parameters.yml ]
+ DEBUG [0565a8d4] Finished in 0.050 seconds with exit status 1 (failed).
+ ERROR linked file /var/www/demo/shared/app/config/parameters.yml does not exist on localhost
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-11-25 16:42:07 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d461bab2] Running /usr/bin/env mkdir -p /tmp as nadir@localhost
+ DEBUG [d461bab2] Command: /usr/bin/env mkdir -p /tmp
+  INFO [d461bab2] Finished in 0.197 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-demo-production-nadir.sh 0.0%
+  INFO Uploading /tmp/git-ssh-demo-production-nadir.sh 100.0%
+  INFO [f63d07da] Running /usr/bin/env chmod 700 /tmp/git-ssh-demo-production-nadir.sh as nadir@localhost
+ DEBUG [f63d07da] Command: /usr/bin/env chmod 700 /tmp/git-ssh-demo-production-nadir.sh
+  INFO [f63d07da] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [f243442b] Running /usr/bin/env git ls-remote git@github.com:nfouka/sf4.git HEAD as nadir@localhost
+ DEBUG [f243442b] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-demo-production-nadir.sh" ; /usr/bin/env git ls-remote git@github.com:nfouka/sf4.git HEAD )
+ DEBUG [f243442b] 	725c422b56b72d2b79cc7fa5d76083f7ec6d4432	HEAD
+  INFO [f243442b] Finished in 2.957 seconds with exit status 0 (successful).
+  INFO [e242823d] Running /usr/bin/env mkdir -p /var/www/demo/shared /var/www/demo/releases as nadir@localhost
+ DEBUG [e242823d] Command: /usr/bin/env mkdir -p /var/www/demo/shared /var/www/demo/releases
+  INFO [e242823d] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [e9dbda88] Running /usr/bin/env mkdir -p /var/www/demo/shared/app/logs as nadir@localhost
+ DEBUG [e9dbda88] Command: /usr/bin/env mkdir -p /var/www/demo/shared/app/logs
+  INFO [e9dbda88] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [d303fdf1] Running [ -f /var/www/demo/current/REVISION ] as nadir@localhost
+ DEBUG [d303fdf1] Command: [ -f /var/www/demo/current/REVISION ]
+ DEBUG [d303fdf1] Finished in 0.045 seconds with exit status 1 (failed).
