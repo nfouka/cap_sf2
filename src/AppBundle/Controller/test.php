@@ -1,46 +1,6 @@
 
 <?php
 
-// This file is part of Moodle - http://moodle.org/
-//
-// Moodle is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// Moodle is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
-/**
- * @package moodlecore
- * @subpackage backup-controller
- * @copyright 2010 onwards Eloy Lafuente (stronk7) {@link http://stronk7.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
-/**
- * Class implementing the controller of any backup process
- *
- * This final class is in charge of controlling all the backup architecture, for any
- * type of backup. Based in type, format, interactivity and target, it stores the
- * whole execution plan and settings that will be used later by the @backup_worker,
- * applies all the defaults, performs all the security contraints and is in charge
- * of handling the ui if necessary. Also logging strategy is defined here.
- *
- * Note the class is 100% neutral and usable for *any* backup. It just stores/requests
- * all the needed information from other backup classes in order to have everything well
- * structured in order to allow the @backup_worker classes to do their job.
- *
- * In other words, a mammoth class, but don't worry, practically everything is delegated/
- * aggregated!)
- *
- * TODO: Finish phpdocs
- */
 class backup_controller extends base_controller {
 
     protected $backupid; // Unique identificator for this backup
