@@ -14,17 +14,6 @@ class backup_controller extends base_controller {
     protected $userid; // user id executing the backup
     protected $operation; // Type of operation (backup/restore)
 
-    protected $status; // Current status of the controller (created, planned, configured...)
-
-    protected $plan;   // Backup execution plan
-    protected $includefiles; // Whether this backup includes files or not.
-
-    protected $execution;     // inmediate/delayed
-    protected $executiontime; // epoch time when we want the backup to be executed (requires cron to run)
-
-    protected $destination; // Destination chain object (fs_moodle, fs_os, db, email...)
-
-    protected $checksum; // Cache @checksumable results for lighter @is_checksum_correct() uses
 
     /**
      * Constructor for the backup controller class.
